@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vjCLNMBdVFECkq7im0fNPVvZ/2pVwk0/iSEDJEwMnMiFcavKEJ29JoBP1vNG/3+7N6c1LYu9ftvSRHKuJhv0xA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Butch\\source\\repos\\Labs\\Lab27-RedditAPI\\Lab27-RedditAPI\\Lab27-RedditAPI\\Lab27-RedditAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Butch\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
