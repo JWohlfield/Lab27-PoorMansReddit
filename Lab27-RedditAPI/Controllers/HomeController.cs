@@ -22,9 +22,24 @@ namespace Lab27_RedditAPI.Controllers
 
         public IActionResult Index()
         {
-            List<Child> posts = rd.GetPosts();
+            List<Child> posts = rd.GetPosts("aww");
             
 
+            return View(posts);
+        }
+
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        public IActionResult Result(string subreddit)
+        {
+            List<Child> posts = rd.GetPosts(subreddit);
+            if(posts.Count == 0) 
+            {
+                TempData["error"] = "No posts were returned from the subreddit: " + subreddit;
+            }
             return View(posts);
         }
 

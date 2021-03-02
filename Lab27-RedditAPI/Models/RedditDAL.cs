@@ -10,9 +10,9 @@ namespace Lab27_RedditAPI.Models
 {
     public class RedditDAL
     {
-        public string GetPostData()
+        public string GetPostData(string subreddit)
         {
-            string url = @"https://www.reddit.com/r/aww/.json";
+            string url = @$"https://www.reddit.com/r/{subreddit.Trim()}/.json";
 
             HttpWebRequest request = WebRequest.CreateHttp(url);
 
@@ -25,9 +25,9 @@ namespace Lab27_RedditAPI.Models
             return JSON;
         }
 
-        public List<Child> GetPosts()
+        public List<Child> GetPosts(string sub)
         {
-            string json = GetPostData();
+            string json = GetPostData(sub);
             Rootobject r = JsonConvert.DeserializeObject<Rootobject>(json);
             return r.data.children.ToList();
         }

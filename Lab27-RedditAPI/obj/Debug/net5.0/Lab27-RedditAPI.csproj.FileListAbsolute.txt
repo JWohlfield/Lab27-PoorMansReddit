@@ -39,3 +39,5 @@ C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI
 C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI\obj\Debug\net5.0\ref\Lab27-RedditAPI.dll
 C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI\obj\Debug\net5.0\Lab27-RedditAPI.pdb
 C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI\obj\Debug\net5.0\Lab27-RedditAPI.genruntimeconfig.cache
+C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI\obj\Debug\net5.0\Razor\Views\Home\Result.cshtml.g.cs
+C:\Users\Butch\source\repos\Labs\Lab27-RedditAPI\Lab27-RedditAPI\Lab27-RedditAPI\obj\Debug\net5.0\Razor\Views\Home\Search.cshtml.g.cs

@@ -1,0 +1,15 @@
+﻿@model List<Child>
+<h2>@TempData["error"]</h2>
+
+@foreach (Child c in Model)
+{
+    string url = "https://reddit.com" + c.data.permalink;
+    <a href="@url">
+        <h2>@c.data.title</h2>
+        <img src="@c.data.thumbnail" />
+
+    </a>
+
+    <br />
+
+}
