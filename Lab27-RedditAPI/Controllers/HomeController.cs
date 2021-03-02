@@ -13,8 +13,7 @@ namespace Lab27_RedditAPI.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        //Why did we not need the next line this time?
-        //private RedditDAL rd = new RedditDAL();
+        private RedditDAL rd = new RedditDAL();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -23,15 +22,10 @@ namespace Lab27_RedditAPI.Controllers
 
         public IActionResult Index()
         {
-            Rootobject rp = new Rootobject();
-            //Why don't I see indexes of children ???
-            //Using JSON Viewer chrome extension...is JSONView better??
-            Data1 basePath = rp.data.children[0].data;
-            string title = basePath.title;
-            string imageUrl = basePath.thumbnail;
-            string link = "reddit.com" + basePath.permalink;
+            List<Child> posts = rd.GetPosts();
+            
 
-            return View(rp);
+            return View(posts);
         }
 
         public IActionResult Privacy()

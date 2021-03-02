@@ -1,6 +1,15 @@
-﻿@model Data1
+﻿@model List<Child>
 
-<h2>@Model.title</h2>
-<img src="@Model.thumbnail"/>
-<a href="reddit.com" + @Model.permalink;>Link</a>
+@foreach (Child c in Model)
+{
+    string url = "https://reddit.com" + c.data.permalink;
+<a href="@url">
+    <h2>@c.data.title</h2>
+    <img src="@c.data.thumbnail" />
+    <br />
+    <br />
+</a>
+
+}
+
 

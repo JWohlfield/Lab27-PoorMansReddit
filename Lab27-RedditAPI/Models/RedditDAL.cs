@@ -25,11 +25,12 @@ namespace Lab27_RedditAPI.Models
             return JSON;
         }
 
-        public Rootobject PostData()
+        public List<Child> GetPosts()
         {
-            string posts = GetPostData();
-            Rootobject ro = JsonConvert.DeserializeObject<Rootobject>(posts);
-            return ro;
+            string json = GetPostData();
+            Rootobject r = JsonConvert.DeserializeObject<Rootobject>(json);
+            return r.data.children.ToList();
         }
+        
     }
 }

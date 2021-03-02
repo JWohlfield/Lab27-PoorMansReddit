@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace Lab27_RedditAPI.Models
 {
-
+    //string title = Root.Data.children[0].data.title
+    //string img = Root.Data.children[0].data.thumbnail
+    //string url = "reddit.com/" + Root.Data.children[0].data.permalink
     public class Rootobject
     {
         public string kind { get; set; }
